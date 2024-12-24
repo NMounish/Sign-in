@@ -11,7 +11,7 @@ const Signup = () => {
     e.preventDefault(); // Prevent page refresh
     const user = { username, name, email };
     try {
-      const response = await axios.post("http://localhost:8080/user", user); // Send POST request
+      const response = await axios.post("", user); // Send POST request
       alert("User registered successfully!"); // Success message
     } catch (error) {
       console.error("Error submitting form:", error);
